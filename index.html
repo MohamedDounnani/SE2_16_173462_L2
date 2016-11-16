@@ -2,22 +2,29 @@
     <head><title>Progettino</title></head>
     <script src="index.js"></script>
 <body>
-
-<table id="Tabela">
+    <style>
+        tr {
+             background-color : #ADFF2F;
+            
+        }
+    
+    </style>
+<h1>Magazzino<h1>
+<table id="Tabela" border="2" bordercolor="black"  bordercolordark="#000099" cellspacing="10" cellpadding="30">
     <tr><td>A</td><td>1</td></tr>
     <tr><td>B</td><td>1</td></tr>
     <tr><td>C</td><td>1</td></tr>
     <tr><td>D</td><td>1</td></tr>
     
 </table>
-
+<p>
 <button id="ciao" onclick="Crea()">Ordina</button>
-    <input type="text" id="nome" value="Insert Element" hidden>
-     <input type="text" id="quantità" value="Insert Quantity" hidden>
+<input type="text" id="nome" value="Insert Element" hidden>
+<input type="text" id="quantità" value="Insert Quantity" hidden>
 <button id="Update" onclick="Aggiorna()" hidden>Update</button>
 <input type="text" id="limite" value="30" hidden>    
-<button id="limitebutton" onclick="" hidden>Limite</button>
-      
+    <input onclick="CambiaStato()" type="button" value="Limite" id="limitebutton" hidden>
+</p>     
 
 </body>
 </html>
